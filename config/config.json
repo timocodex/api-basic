@@ -1,8 +1,14 @@
 {
-  "development":{
-    "host": "127.0.0.1",
-    "dialect": "sqlite",
-    "storage": "db/userdb.db",
-    "logging" : false
+  "development": {
+    "username": "timo",
+    "password": "1234",
+    "database": "dbuser",
+    "host": "localhost",
+    "dialect": "postgres",
+    "base_url":"localhost:3000/"
+  },
+  "production": {
+    "use_env_variable":"DATABASE_URL",
+    "base_url":"https://git.heroku.com/infinite-waters-64210.git"
   }
 }
