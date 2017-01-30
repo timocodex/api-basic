@@ -8,17 +8,6 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-      },
-      createUser: function(name,user_name,password){
-        this.create({name:nama,user_name:user_name,password:password})
-      },
-      getAllUser: function(){
-        this.findAll()
-      }
-    },
-    instanceMethods:{
-      getUser: function(){
-
       }
     }
   });
